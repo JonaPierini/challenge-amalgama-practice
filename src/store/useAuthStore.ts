@@ -13,14 +13,13 @@ type Action = {
 
 const initialState: State = {
   status: localStorage.getItem("token") ? "authorized" : "unAuthorized",
-  token: undefined,
+  token: localStorage.getItem("token") || undefined,
 };
 
 export const useAuthStore = create<State & Action>()((set) => ({
   ...initialState,
   login: async (email: string, password: string) => {
     const response = await login(email, password);
-    console.log(response);
     if (response) {
       localStorage.setItem("token", response.token);
       set({
@@ -35,6 +34,6 @@ export const useAuthStore = create<State & Action>()((set) => ({
   },
   logout: async () => {
     localStorage.removeItem("token");
-    set(initialState);
+    set({ status: "unAuthorized", token: undefined });
   },
 }));

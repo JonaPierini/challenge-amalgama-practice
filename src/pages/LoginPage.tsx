@@ -53,26 +53,6 @@ export const LoginPage = () => {
       >
         <TextField
           sx={{
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "#FEFAE0", // Color del borde por defecto
-              },
-              "&:hover fieldset": {
-                borderColor: "#FEFAE0", // Color del borde al pasar el mouse
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: "#FEFAE0", // Color del borde al hacer foco
-              },
-              "& input": {
-                color: "#FEFAE0", // Color del texto que se escribe
-              },
-            },
-            "& .MuiInputLabel-root": {
-              color: "#FEFAE0", // Color del label por defecto
-              "&.Mui-focused": {
-                color: "#FEFAE0", // Color del label al hacer foco
-              },
-            },
             marginBottom: 2,
           }}
           autoComplete="off"
@@ -89,26 +69,6 @@ export const LoginPage = () => {
         />
         <TextField
           sx={{
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "#FEFAE0", // Color del borde por defecto
-              },
-              "&:hover fieldset": {
-                borderColor: "#FEFAE0", // Color del borde al pasar el mouse
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: "#FEFAE0", // Color del borde al hacer foco
-              },
-              "& input": {
-                color: "#FEFAE0", // Color del texto que se escribe
-              },
-            },
-            "& .MuiInputLabel-root": {
-              color: "#FEFAE0", // Color del label por defecto
-              "&.Mui-focused": {
-                color: "#FEFAE0", // Color del label al hacer foco
-              },
-            },
             marginBottom: 2,
           }}
           autoComplete="off"
